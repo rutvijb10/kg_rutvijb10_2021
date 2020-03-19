@@ -2,6 +2,9 @@ import sys
 
 def compareString(string1, string2) :
   
+  	# If lengths of strings are not equal, return False
+    if len(string1) != len(string2) :
+        return False
   
     # Store mapping of every character from string 1 to that of string 2. Initialize all entries of the array as -1
     str1_map = [-1] * MAX_CHARS
